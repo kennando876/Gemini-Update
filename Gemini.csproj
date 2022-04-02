@@ -107,8 +107,8 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="changepw.aspx" />
-    <Content Include="database1\GeminiDB.mdf" />
-    <Content Include="database1\GeminiDB_log.ldf" />
+    <Content Include="database\GeminiDB.mdf" />
+    <Content Include="database\GeminiDB_log.ldf" />
     <Content Include="dashboard.aspx" />
     <Content Include="details.aspx" />
     <Content Include="favicon.ico" />
