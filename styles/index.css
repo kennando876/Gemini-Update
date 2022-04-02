@@ -1,0 +1,206 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 2.5em;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 10vh;
+    color: #007bff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login {
+    margin: auto;
+    margin-top: 20vh;
+    padding: 10px;
+    width: 25%;
+    height: 350px;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0px 15px 27px #e1e1e3, 0px -15px 27px #ffffff;
+}
+
+.avatar {
+    display: block;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.tbox-container {
+    margin-top: 20px;
+}
+
+.tbox {
+    margin: 15px auto;
+    display: block;
+    width: 45%;
+    height: 1.1em;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .tbox:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #80bdff;
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+
+    .tbox::placeholder {
+        color: gray;
+    }
+
+.login-btn {
+    display: block;
+    margin: 20px auto;
+    height: 3em;
+    font-size: 14px;
+    width: 10em;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: .20rem;
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .login-btn:hover {
+        color: #fff;
+        background-color: #0f78e8;
+    }
+
+
+#MessageLabel{
+    display: block;
+   text-align: center;
+   margin-bottom: 10px;
+
+}
+
+
+/*ANIMATED HEADER*/
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.background {
+    z-index:  -1;
+    position: fixed;
+    width: 100vw;
+    height:30vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+    .background li {
+        position: absolute;
+        top: 10vh;
+        left: 45vw;
+        width: 10px;
+        height: 10px;
+        border: solid 1px #e5e5e5;
+        color: transparent;
+        transform-origin: top left;
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        animation: cube 20s ease-in forwards infinite;
+    }
+
+        .background li:nth-child(0) {
+            animation-delay: 0s;
+            left: 90vw;
+            top: 8vh;
+            border-color: #ffffff;
+        }
+
+        .background li:nth-child(1) {
+            animation-delay: 2s;
+            left: 88vw;
+            top: 6vh;
+        }
+
+        .background li:nth-child(2) {
+            animation-delay: 4s;
+            left: 37vw;
+            top: 10vh;
+            border-color: #ffffff;
+        }
+
+        .background li:nth-child(3) {
+            animation-delay: 6s;
+            left: 15vw;
+            top: 17vh;
+            border-color: #ffffff;
+        }
+
+        .background li:nth-child(4) {
+            animation-delay: 8s;
+            left: 78vw;
+            top: 15vh;
+            border-color: #ffffff;
+        }
+
+        .background li:nth-child(5) {
+            animation-delay: 10s;
+            left: 10vw;
+            top: 11vh;
+        }
+
+        .background li:nth-child(6) {
+            animation-delay: 12s;
+            left: 35vw;
+            top: 23vh;
+        }
+
+        .background li:nth-child(7) {
+            animation-delay: 14s;
+            left: 55vw;
+            top: 16vh;
+            border-color: #ffffff;
+        }
+
+        .background li:nth-child(8) {
+            animation-delay: 16s;
+            left: 5vw;
+            top: 3vh;
+            border-color: #ffffff;
+        }
+
+        .background li:nth-child(9) {
+            animation-delay: 18s;
+            left: 70vw;
+            top: 25vh;
+        }
+
+        .background li:nth-child(10) {
+            animation-delay: 20s;
+            left: 47vw;
+            top: 30vh;
+            border-color: #ffffff;
+        }
+

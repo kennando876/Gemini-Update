@@ -1,0 +1,276 @@
+﻿@import url('header.css');
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    margin: 15px 0 2px 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #808080;
+}
+
+label {
+    /*display: block;*/
+    width: 40%;
+}
+
+label {
+    color: #212529;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#MessageLabel {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+#pg0, #pg1, #pg2, #pg3, #pg4 {
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 10px 5%;
+    width: 60%;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+}
+
+#pg4 {
+    width: 75%;
+    padding: 10px;
+}
+
+#PersonalInformation {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+input[type=text], input[type=date], select, input[type=number] {
+    margin: 5px auto;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+    height: 1em;
+    padding: .375rem 0 .375rem .375rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+select {
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+
+.row {
+    margin: 5px 0;
+    display: flex;
+    flex-basis: 0;
+    justify-content: space-between;
+}
+
+    .row label select {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+    }
+
+
+.f-w {
+    width: 100%;
+}
+
+input[type=text]:focus, input[type=date]:focus, select:focus, input[type=number]:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.input[type=text]::placeholder {
+    color: gray;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.btn {
+    display: inline-block;
+    margin: 5px 0;
+    height: 3em;
+    font-size: 14px;
+    width: 10em;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: .20rem;
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .btn:hover {
+        color: #fff;
+        background-color: #0f78e8;
+    }
+
+
+#SaveButton {
+    display: none;
+}
+
+#file-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.file-row {
+    background-image: url('../images/res/file-upload.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    border: 2px dashed #e5e8eb;
+    border-radius: 0px;
+    padding: 5px;
+    min-height: 200px;
+    margin: 10px auto;
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+input[type=file] {
+    margin-top: 10px;
+}
+
+.preview {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+    .preview * {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+/********************************************/
+.file-upload {
+    position: absolute;
+    bottom: 5px;
+    padding: 5px;
+    margin-left: 15px;
+    display: flow-root;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+    .file-upload:hover {
+        background-color: #0f78e8;
+    }
+
+/* The button size */
+.file-upload {
+    height: 30px;
+}
+
+    .file-upload, .file-upload span {
+        padding-top: 5px;
+        width: 290px;
+    }
+
+        /*.file-upload span::before{
+        content:" Hello world";
+        height: 150px;
+        background-color: red;
+    }*/
+
+
+        .file-upload input {
+            top: 0;
+            left: 3px;
+            margin: 0;
+            font-size: 11px;
+            font-weight: bold;
+            /* Loses tab index in webkit if width is set to 0 */
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+
+        .file-upload strong {
+            font: normal 16px Tahoma,sans-serif;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .file-upload span {
+            display: inline-block;
+            /*top: 0;
+            left: 0;*/
+            /* Adjust button text vertical alignment */
+            padding-top: 5px;
+        }
+
+
+
+.comment-container {
+    margin-top: 15px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    bottom: 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+#CommentTextBox {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 16px;
+    height: 50%;
+    width: 60%;
+    max-width: 85%;
+    border: 1px solid #0026ff;
+    border-radius: 3px;
+}
+
+#SubmitButton {
+    display: block;
+    width: 15em;
+    height: 3.5em;
+    margin: 50px auto;
+}

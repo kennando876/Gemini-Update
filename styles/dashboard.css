@@ -1,0 +1,162 @@
+﻿@import url('header.css');
+
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+body *{
+    outline: none;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+
+
+label {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+#tableContainer{
+    width: 63%;
+}
+
+#MessageLabel {
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+}
+
+#recContainer {
+    width: 35%;
+    margin-top: 10px;
+}
+
+#ApplicantImg{
+    width: 130px;
+    height: auto;
+}
+
+#CommentTextBox {
+    width: 100%;
+    height: 75px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.glow{
+    border: 1px solid red !important;
+}
+
+    #CommentTextBox:focus {
+        border-color: #007bff;
+    }
+
+    #recommendations {
+        background-color: transparent;
+        height: 75vh;
+        border: 1px solid lightgray;
+        overflow-y: auto;
+    }
+
+#recHeader {
+    background-color: lightgray;
+    display: block;
+    text-align: center;
+    width: 96%;
+    margin: 0;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+#btnContainer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px 0;
+    height: 3em;
+    font-size: 14px;
+    width: 10em;
+    color: #fff;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: .20rem;
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#ApplicationLink{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.info-label {
+    font-weight: bold;
+}
+
+.recRow{
+    padding: 5px 10px;
+    margin: 10px 5px;
+    border-radius: 3px;
+    border: 1px solid #e9e9e9;
+}
+
+.n-pos {
+    padding: 2px 0;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+    color: #323232;
+    font-weight: bold;
+    /*border-bottom: 1px solid whitesmoke;*/
+}
+
+.comment {
+    padding: 5px;
+    margin-top: 5px;
+    width: 98%;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/*#ApproveButton{ 
+    color: green;
+    border: 1px solid green;
+}*/
+
+#ApproveButton{
+    background-color: green;
+    color: white;
+} 
+
+/*#DenyButton{
+    color: red;
+    border: 1px solid red;
+}*/
+
+#DenyButton{
+    color: white;
+    background-color: red;
+}
+
+/*#DifferButton{
+    color: gray;
+    border: 1px solid gray;
+}*/
+
+#DifferButton{
+    color: white;
+    background-color: gray;
+}

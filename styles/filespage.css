@@ -1,0 +1,64 @@
+﻿@import url('header.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#psizeContainer {
+    margin: 0 20px;
+    position: fixed;
+    background-color: white;
+    padding: 10px;
+}
+
+    #psizeContainer input[type=button]{
+        border: 1px solid #007bff;
+        color: white;
+        background-color: #007bff;
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    #fileContainer {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        display: block;
+    }
+
+.fileRow {
+    margin: 20px 30px;
+    display: inline-block;
+}
+
+    .fileRow a:visited {
+        color: white !important;
+    }
+
+.fileLabel{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.file-holder {
+    display: inline-block;
+    margin-left: auto;
+    overflow-x: hidden;
+    width: 45vw;
+    height: 60vh;
+    transition: width ease-in-out 500ms, height ease-in-out 500ms, margin ease-in-out 5000ms;
+}
+
+.view-file {
+    display: block;
+    width: 5em;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 3px;
+}

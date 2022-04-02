@@ -1,0 +1,50 @@
+﻿@import url('header.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#MessageLabel{
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1rem;
+}
+
+#queueContainer {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.a-row {    
+    display: block;
+    text-align: left;
+    width: 70%;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.a-row * {
+    margin: auto 15px;
+    display: inline-block;
+    width: 20%;
+}
+
+
+.remove-btn {
+    display: inline-block;
+    margin: 5px 0;
+    height: 2.5em;
+    font-size: 14px;
+    width: 8em;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: .20rem;
+    transition: color .15s ease-in-out,background-color .2s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
